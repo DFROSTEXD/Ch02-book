@@ -13,7 +13,8 @@ public class Book
     private String title;
     private int pages;
     private String refNumber;
-
+    private int borrowed;
+    
     /**
      * Set the author and title fields when this object
      * is constructed.
@@ -24,6 +25,7 @@ public class Book
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
+        borrowed = 0;
     }
 
     // Add the methods here ...
@@ -75,6 +77,7 @@ public class Book
         System.out.println("Author: " + author);
         System.out.println("Title: " + title);
         System.out.println("Pages: " + pages);
+        System.out.println("Borrowed: " + borrowed);
         
         if (refNumber.length() > 0)
         {
@@ -108,5 +111,15 @@ public class Book
     public String getRefNumber()
     {
         return refNumber;
+    }
+    
+    public void borrow()
+    {
+        borrowed = borrowed + 1;
+    }
+    
+    public int getBorrowed()
+    {
+        return borrowed;
     }
 }
