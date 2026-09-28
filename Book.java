@@ -1,7 +1,6 @@
 /**
- * A class that maintains information on a book.
- * This might form part of a larger application such
- * as a library system, for instance.
+ * Upgraded the book code to reflect the build in the exercises
+ * on pages 90-92. These are exercises 2.83-2.92.
  *
  * @author (William Harvey)
  * @version (9/28/26)
