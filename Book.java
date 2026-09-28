@@ -115,16 +115,28 @@ public class Book
         return refNumber;
     }
     
+    /**
+     * borrowed incrementation
+     * @increases the amount of times a book has been borrowed when using getBorrow
+     */
     public void borrow()
     {
         borrowed = borrowed + 1;
     }
     
+    /**
+     * getBorrowed
+     * @gets the borrowed amount
+     */
     public int getBorrowed()
     {
         return borrowed;
     }
     
+    /**
+     * isCourseText
+     * @sets a boolean that checks if the book is a textbook
+     */
     public boolean isCourseText()
     {
         return courseText;
