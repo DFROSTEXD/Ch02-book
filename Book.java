@@ -34,10 +34,24 @@ public class Book
     }
     
     /**
+     * getTitle
      * @returns name of the book title
      */
     public String getTitle()
     {
         return title;
+    }
+    
+    /**
+     * printAuthor and printTitle
+     * @prints both the author and title in the terminal
+     */
+    public void printAuthor()
+    {
+        System.out.println(author);
+    }
+    public void printTitle()
+    {
+        System.out.println(title);
     }
 }
